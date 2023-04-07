@@ -14,7 +14,7 @@ app.use(cors());
 dotenv.config();
 
 app.use('/users',userRoutes)
-app.use('/posts',postRoutes, require('./routes/posts'))
+app.use('/posts',postRoutes)
 
 app.get('/',(req,res)=>{
   res.send('APP IS RUNNING')
